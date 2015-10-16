@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主界面list  -->
+    <string-array name="main_list_title">
+        <item>@string/video_play_title</item>
+        <item>@string/parallax_header_title</item>
+        <item>@string/key_board_title</item>
+        <item>@string/music_play_title</item>
+        <item>@string/time_task_title</item>
+        <item>@string/power_manager_title</item>
+        <item>@string/screen_on_title</item>
+        <item>@string/drawable_test_title</item>
+    </string-array>
+
+    <!--list 条目对应了Activity-->
+    <string-array name="main_list_class">
+        <item>com.dzhenyu.test.VideoPlayActivity</item>
+        <item>com.dzhenyu.test.ParallaxHeaderViewPagerActivity</item>
+        <item>com.dzhenyu.test.KeyBoardActivity</item>
+        <item>com.dzhenyu.test.MusicPlayActivity</item>
+        <item>com.dzhenyu.test.TimeTaskActivity</item>
+        <item>com.dzhenyu.test.PowerManagerActivity</item>
+        <item>com.dzhenyu.test.ScreenOnActivity</item>
+        <item>com.dzhenyu.test.DrawableTestActivity</item>
+    </string-array>
+</resources>

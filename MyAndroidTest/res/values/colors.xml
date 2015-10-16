@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="window_background">#eeeeee</color>
+    <color name="title_bar_background">#FFFFFF</color>
+    <color name="title_content_color">#343434</color>
+    <color name="title_bar_press">#f0f0f0</color>
+    <color name="bottom_bar_background">#E7E7E7</color>
+    <color name="content_background_theme">#FFFFFF</color>
+    <color name="text_content">#888888</color>
+    <color name="black">#000000</color>
+
+    <!-- 音乐播放器 -->
+    <color name="control_bar_background">#19BBFF</color>
+
+    <color name="red_btn">#ffff252c</color>
+    <color name="red_btn_press">#ffff5f64</color>
+    <color name="red_btn_press_test">#ff15f5ff</color>
+</resources>

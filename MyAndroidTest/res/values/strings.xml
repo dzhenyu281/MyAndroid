@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="App_name">MyAndroidTest</string>
+    <string name="back">返回</string>
+
+    <!-- 主页 -->
+    <string name="main_title">主页</string>
+    <string name="video_play_title">VideoView练习</string>
+    <string name="parallax_header_title">ParallaxHeaderViewPager练习</string>
+    <string name="key_board_title">软键盘</string>
+    <string name="music_play_title">MusicPlay</string>
+    <string name="time_task_title">TimeTask测试</string>
+    <string name="power_manager_title">电量管理</string>
+    <string name="screen_on_title">ScreenOn广播监听</string>
+    <string name="drawable_test_title">Drawable</string>
+    <!--反射Activity 不存在提示-->
+    <string name="not_found_class">NotFoundActivityClass</string>
+
+
+    <!--音乐播放-->
+    <string name="play_order_list">顺序播放</string>
+    <string name="play_loop_list">循环播放</string>
+    <string name="play_random_list">随机播放</string>
+    <string name="play_loop_single">单曲循环</string>
+    <string name="default_play_time">00:00</string>
+
+    <!--电量管理 -->
+    <string name="battery_message">battery Broadcast messages %1$d: \nlevel: %2$s \npresent:%3$s \nstatus:%4$s plugged：%5$s \nhealth:%6$s \ntemperature: %7$s
+    </string>
+</resources>

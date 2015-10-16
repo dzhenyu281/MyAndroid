@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clip xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="bottom"
+    android:clipOrientation="vertical">
+    <bitmap android:src="@drawable/ic_launcher"></bitmap>
+</clip>
+
+<!-- 由gravity和clipOrientation 共同控制方向-->

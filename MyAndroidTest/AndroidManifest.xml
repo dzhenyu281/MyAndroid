@@ -1,0 +1,60 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dzhenyu.test"
+    android:versionCode="1"
+    android:versionName="V1.0.0">
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/App_name"
+        android:theme="@style/App_Theme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".VideoPlayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ParallaxHeaderViewPagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".KeyBoardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MusicPlayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TimeTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PowerManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ScreenOnActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DrawableTestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DrawableShowActivity"
+            android:screenOrientation="portrait" />
+
+        <!--<receiver android:name=".broadcastreceiver.TimeTaskReceiver">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="time_task_action" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+        <service android:name=".service.ScreenOnService" />
+    </application>
+
+</manifest>
