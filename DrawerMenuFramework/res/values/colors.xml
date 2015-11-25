@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--app window background-->
+    <color name="app_background">#FFFFFF</color>
+
+    <!--app hander-->
+    <color name="hander_text_color">#FFFFFF</color>
+    <color name="hander_background">#3F51B5</color>
+
+</resources>

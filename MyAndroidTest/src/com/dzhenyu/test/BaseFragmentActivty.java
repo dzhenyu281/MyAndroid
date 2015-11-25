@@ -2,8 +2,12 @@ package com.dzhenyu.test;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
+import android.view.KeyEvent;
+import android.view.Menu;
 import android.view.MotionEvent;
 import android.widget.TextView;
+
+import com.dzhenyu.test.fragment.BaseFragment;
 
 /**
  * Created by onlymem on 2015/9/8.
@@ -46,6 +50,12 @@ public abstract class BaseFragmentActivty extends BaseActivity {
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         return baseFragment.onTouchEvent(event);
+    }
+
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        return baseFragment.onKeyDown(keyCode, event);
     }
 
 }

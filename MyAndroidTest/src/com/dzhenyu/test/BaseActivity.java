@@ -2,6 +2,7 @@ package com.dzhenyu.test;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -103,22 +104,27 @@ public class BaseActivity extends FragmentActivity implements View.OnClickListen
     /**
      * 设置 右上角按钮 灰显
      */
-    protected void setRightBtnEnabled(boolean enabled) {
+    public void setRightBtnEnabled(boolean enabled) {
         rlRightBtn.setEnabled(enabled);
     }
 
     /**
      * 获取 右上角按钮 是否灰显
      */
-    protected boolean getRightBtnEnabled() {
+    public boolean getRightBtnEnabled() {
         return rlRightBtn.isEnabled();
     }
 
     /**
      * 设置是否显示 头布局
      */
-    protected void setHeaderVisibility(int visibility) {
+    public void setHeaderVisibility(int visibility) {
         findViewById(R.id.rl_header_layout).setVisibility(visibility);
     }
 
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        return super.onKeyDown(keyCode, event);
+    }
 }

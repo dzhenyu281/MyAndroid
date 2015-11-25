@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/content_background_theme">
+
+    <ImageView
+        android:id="@+id/property_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerInside"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/level1"/>
+
+    <Button
+        android:id="@+id/property_animation_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/property_animation_2"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_bg"
+        android:text="propertyAnimation1"
+        android:textSize="16sp"
+        android:textColor="@color/text_content_white"/>
+
+    <Button
+        android:id="@+id/property_animation_2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_bg"
+        android:layout_above="@+id/property_animation_3"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="PropertyAnimation2"
+        android:textSize="16sp"
+        android:textColor="@color/text_content_white"/>
+
+    <Button
+        android:id="@+id/property_animation_3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_bg"
+        android:layout_alignParentBottom="true"
+        android:text="propertyAnimation3"
+        android:textSize="16sp"
+        android:textColor="@color/text_content_white"/>
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/content_background_theme"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tv_open_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="open url: http://www.baidu.com" />
+
+    <Button
+        android:id="@+id/btn_browser_open"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_bg"
+        android:textColor="@color/title_bar_background"
+        android:text="browser open" />
+
+    <Button
+        android:id="@+id/btn_webview_open"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_bg"
+        android:textColor="@color/title_bar_background"
+        android:text="webView open" />
+
+</LinearLayout>

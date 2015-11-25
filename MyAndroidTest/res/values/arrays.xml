@@ -10,6 +10,12 @@
         <item>@string/power_manager_title</item>
         <item>@string/screen_on_title</item>
         <item>@string/drawable_test_title</item>
+        <item>@string/image_view_scaletype_title</item>
+        <item>@string/open_url_title</item>
+        <item>@string/ac_textview_title</item>
+        <item>@string/share_title</item>
+        <item>@string/animation_imitation</item>
+        <item>@string/eventbus_titile</item>
     </string-array>
 
     <!--list 条目对应了Activity-->
@@ -22,5 +28,11 @@
         <item>com.dzhenyu.test.PowerManagerActivity</item>
         <item>com.dzhenyu.test.ScreenOnActivity</item>
         <item>com.dzhenyu.test.DrawableTestActivity</item>
+        <item>com.dzhenyu.test.ImageScaleTypeActivity</item>
+        <item>com.dzhenyu.test.OpenUrlActivity</item>
+        <item>com.dzhenyu.test.ACTextViewActivity</item>
+        <item>com.dzhenyu.test.UMengShareActivity</item>
+        <item>com.dzhenyu.test.ImitationAnimationActivity</item>
+        <item>com.dzhenyu.test.function.eventbus.EventBusFristActivity</item>
     </string-array>
 </resources>

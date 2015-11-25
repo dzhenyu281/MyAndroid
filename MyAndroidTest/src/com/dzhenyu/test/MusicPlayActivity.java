@@ -1,6 +1,7 @@
 package com.dzhenyu.test;
 
-import android.media.MediaPlayer;
+import com.dzhenyu.test.fragment.BaseFragment;
+import com.dzhenyu.test.fragment.MusicPlayFragment;
 
 /**
  * Created by onlymem on 2015/9/11.

@@ -1,10 +1,13 @@
 package com.dzhenyu.test.adapter;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -12,12 +15,13 @@ import android.widget.TextView;
 import com.dzhenyu.test.R;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
  * Created by onlymem on 2015/9/18.
  */
-public class TextAdapter extends BaseAdapter {
+public class TextAdapter extends BaseAdapter implements Filterable {
 
     public static final int HEIGHT_TYPE_DEFAULT = 0;
     public static final int HEIGHT_TYPE_WRAPCONTENT = 1;
@@ -27,6 +31,7 @@ public class TextAdapter extends BaseAdapter {
     private List<String> list = new ArrayList<>();
     private Context mContext;
     private FrameLayout.LayoutParams layoutParams;
+    private List<String> startList;
 
     public TextAdapter() {
     }
@@ -40,7 +45,7 @@ public class TextAdapter extends BaseAdapter {
     }
 
     public TextAdapter(Context context, List<String> strs, int type, int height) {
-        this.list = strs;
+        this.startList = this.list = strs;
         mContext = context;
         setLayoutParams(type, height);
     }
@@ -98,8 +103,52 @@ public class TextAdapter extends BaseAdapter {
         return convertView;
     }
 
+    private Filter filter;
+
+    @Override
+    public Filter getFilter() {
+        if (filter == null) {
+            filter = new MyFilter();
+        }
+        return filter;
+    }
+
     class ViewHolder {
         TextView titleView;
         RelativeLayout relativeLayout;
+    }
+
+
+    class MyFilter extends Filter {
+
+        @Override
+        protected FilterResults performFiltering(CharSequence constraint) {
+            FilterResults results = new FilterResults();
+            List<String> resultList = new ArrayList<>();
+
+            if (constraint == null || constraint.length() == 0) {
+                resultList = startList;
+            } else {
+                Iterator<String> iterator = constraint.length() > 1 ? list.iterator() : startList.iterator();
+                while (iterator.hasNext()) {
+                    String str = iterator.next();
+                    if (str.contains(constraint))
+                        resultList.add(str);
+                }
+            }
+            results.values = resultList;
+            results.count = resultList.size();
+            return results;
+        }
+
+        @Override
+        protected void publishResults(CharSequence constraint, FilterResults results) {
+            list = (List<String>) results.values;
+            if (list.size() > 0) {
+                notifyDataSetChanged();
+            } else {
+                notifyDataSetInvalidated();
+            }
+        }
     }
 }

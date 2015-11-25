@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="App_Theme" parent="@android:style/Theme.Holo.Light.NoActionBar">
+    <style name="App_Theme.base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
         <item name="android:windowBackground">@color/window_background</item>
+    </style>
+
+    <style name="App_Theme" parent="App_Theme.base">
     </style>
 
 </resources>

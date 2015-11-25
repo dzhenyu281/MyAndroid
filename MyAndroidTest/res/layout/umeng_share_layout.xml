@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/content_background_theme"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <Button
+        android:id="@+id/umeng_share"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_bg"
+        android:text="@string/umeng_share"
+        android:textColor="@color/text_content_white"/>
+
+    <Button
+        android:id="@+id/umeng_share_custom_ui"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_bg"
+        android:text="@string/umeng_share"
+        android:textColor="@color/text_content_white"/>
+
+    <Button
+        android:id="@+id/system_share"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_bg"
+        android:text="@string/system_share"
+        android:textColor="@color/text_content_white"/>
+
+    <Button
+        android:id="@+id/system_share_custom_ui"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_bg"
+        android:text="@string/system_share"
+        android:textColor="@color/text_content_white"/>
+
+</LinearLayout>

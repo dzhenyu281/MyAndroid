@@ -1,5 +1,8 @@
 package com.dzhenyu.test;
 
+import com.dzhenyu.test.fragment.BaseFragment;
+import com.dzhenyu.test.fragment.ScreenOnFragment;
+
 /**
  * Created by onlymem on 2015/9/22.
  */

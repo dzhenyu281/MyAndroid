@@ -7,6 +7,7 @@
     <color name="bottom_bar_background">#E7E7E7</color>
     <color name="content_background_theme">#FFFFFF</color>
     <color name="text_content">#888888</color>
+    <color name="text_content_white">#FFFFFF</color>
     <color name="black">#000000</color>
 
     <!-- 音乐播放器 -->
@@ -15,4 +16,10 @@
     <color name="red_btn">#ffff252c</color>
     <color name="red_btn_press">#ffff5f64</color>
     <color name="red_btn_press_test">#ff15f5ff</color>
+
+    <color name="linear_divider_linecolor">#acacac</color>
+
+    <color name="background_1">#f1a205</color>
+    <color name="background_3">#f409aa</color>
+    <color name="background_2">#04f5ed</color>
 </resources>

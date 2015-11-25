@@ -1,1 +1,1 @@
-include ':MyAndroidTest'
+include ':MyAndroidTest', ':DrawerMenuFramework2', ':DrawerMenuFramework'

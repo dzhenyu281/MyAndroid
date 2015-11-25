@@ -13,6 +13,12 @@
     <string name="power_manager_title">电量管理</string>
     <string name="screen_on_title">ScreenOn广播监听</string>
     <string name="drawable_test_title">Drawable</string>
+    <string name="image_view_scaletype_title">ScaleType</string>
+    <string name="open_url_title">url打开</string>
+    <string name="ac_textview_title">AutoCompleteTextView测试</string>
+    <string name="share_title">分享</string>
+    <string name="animation_imitation">模仿动画</string>
+    <string name="eventbus_titile">AndroidEventBus</string>
     <!--反射Activity 不存在提示-->
     <string name="not_found_class">NotFoundActivityClass</string>
 
@@ -27,4 +33,22 @@
     <!--电量管理 -->
     <string name="battery_message">battery Broadcast messages %1$d: \nlevel: %2$s \npresent:%3$s \nstatus:%4$s plugged：%5$s \nhealth:%6$s \ntemperature: %7$s
     </string>
+
+    <!--open url Activity-->
+    <string name="browser_cannot_find">未找到浏览器</string>
+    <string name="url_baidu">百度</string>
+    <string name="open_url">open url: %1$s</string>
+    
+    <!--umeng share-->
+    <string name="umeng_share">Umeng Share</string>
+    <string name="system_share">System Share</string>
+
+    <string name="animation_simple">简单动画</string>
+    <string name="property_animation">属性动画</string>
+    <string name="text_in_out">自定义文字飞入飞出</string>
+    <string name="layout_animation">layoutAnimation</string>
+
+    <!--android  event bus-->
+    <string name="eventbus_frist_pager">Eventbus Frist页</string>
+    <string name="eventbus_second_pager">Eventbus Second页</string>
 </resources>
